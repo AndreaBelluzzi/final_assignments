@@ -1,4 +1,4 @@
-# final_assignments
-Final assignments for the python course 
+# Assignments
+Assignments for the python course 
 
 Ciao Luigi :)
