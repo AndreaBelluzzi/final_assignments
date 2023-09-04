@@ -13,3 +13,8 @@ Generate video from screenshot
 
 - screen2video.ipynb
 Upload screenshots and generate a video with the desired format, codec, resolution and framerate
+
+___________________
+
+For a longer explanation, see:
+https://drive.google.com/drive/folders/1cVgVRRR7wg-gUYVBV367WklFXm3uaaI6?usp=drive_link
