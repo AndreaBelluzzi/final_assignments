@@ -4,10 +4,10 @@ Have you ever wanted to create cool videos to show off your fMRI data? This is t
 
 Taking advantage of the possibility of running python scripts on MRIcroGL, I created 3 simple functions to generate 3D render animations. Each step of the animation is saved locally as a screenshot (bitmap format). The function 'scree2video' will merge all the images to generate a short video.
 
-
 **prerequisites**
 MRIcroGL - https://github.com/rordenlab/MRIcroGL
 general tutorial - https://www.nitrc.org/plugins/mwiki/index.php/mricrogl:MainPage
+
 
 ## Script ##
 
