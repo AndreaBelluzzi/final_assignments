@@ -14,6 +14,8 @@ general tutorial - https://www.nitrc.org/plugins/mwiki/index.php/mricrogl:MainPa
 ## Script ##
 
 **MRIcroGL animation**
+MRIcroGL --> Scripting --> Open
+
 - animation1.py
 - animation2.py
   
