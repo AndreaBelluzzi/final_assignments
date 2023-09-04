@@ -11,7 +11,7 @@ general tutorial - https://www.nitrc.org/plugins/mwiki/index.php/mricrogl:MainPa
 
 ## Script ##
 
-**MRIcroGL script**
+**MRIcroGL animation**
 - animation1.py
 - animation2.py
 Contains the 3 functions: animation, pause, clipping; with examples of animations that can be created
