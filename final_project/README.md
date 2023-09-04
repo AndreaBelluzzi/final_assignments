@@ -8,7 +8,6 @@ Taking advantage of the possibility of running python scripts on MRIcroGL, I cre
 **prerequisites**
 
 MRIcroGL - https://github.com/rordenlab/MRIcroGL
-
 general tutorial - https://www.nitrc.org/plugins/mwiki/index.php/mricrogl:MainPage
 
 
