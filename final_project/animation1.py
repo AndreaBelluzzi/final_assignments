@@ -17,7 +17,7 @@ def animation(steps,direction_step,starting_pos,axis2rotate,take_screen,cumulati
     cumulative_steps = crucial for saving the screenshot without deleting the old ones generated from other animation
     """
     
-    for stp in range(0, steps):
+    for stp in range(1, steps):
         if direction_step == 1:   
             if axis2rotate == "x":            
                 gl.azimuthelevation(starting_pos[0]+(stp),starting_pos[1])
@@ -53,7 +53,7 @@ def pause(time,take_screen,cumulative_steps):
     """
     
     cumulative_steps_new = 0
-    for p in range(0, time):
+    for p in range(1, time):
         gl.wait(1)       
         save_name = cumulative_steps + p
         print(save_name)
