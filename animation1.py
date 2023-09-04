@@ -1,3 +1,6 @@
+### Animation 1 MRIcroGL ###
+#Upload the script from MRIcroGL, "Scripting" menu, "open"
+
 import gl
 import sys
 
