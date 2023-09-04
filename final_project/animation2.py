@@ -71,18 +71,18 @@ def pause(time,take_screen,cumulative_steps):
 def clipping(starting_slice,end_slice,step_slices,take_screen,cumulative_steps,azimuth_slice,elevation_slice=0):
 
     """ Animation with clipping (cutting stuff)
-    starting_slice = from 0 to 1, where to start with the clipping
-    end_slice = from 0 to 1, final slice of the clipping
-    step_slices = higher value, slower is the processing of "cutting" your brain thin thinner slices
+    starting_slice =floats from 0 to 1.0, where to start with the clipping 
+    end_slice =floats from 0 to 1.0, final slice of the clipping
+    step_slices = higher value, slower is the processing of "cutting" the brain with thinner slices making the animation more gradual
     pause = how many milliseconds to wait between each slice 
     take_screen = 1 make screenshot in bitmap [there aren't other options :( ] | 0 no screenshot
     cumulative_steps = crucial for saving the screenshot without deleting the old ones generated from other animation
     
     azimuth_slice = azimuth coordinates for the clipping
-    elevation_slice = inclination for the clipping, default = 1
+    elevation_slice = inclination for the clipping, default = 0
     """
-        
-    for slc in range(starting_slice,step_slices):
+
+    for slc in range(int(starting_slice*step_slices),int(end_slice*step_slices)):
         gl.wait(1)
         gl.clipazimuthelevation(slc/step_slices, azimuth_slice, elevation_slice);
         
@@ -95,6 +95,7 @@ def clipping(starting_slice,end_slice,step_slices,take_screen,cumulative_steps,a
             
     cumulative_steps +=  slc 
     return cumulative_steps
+
 
 #=== General Settings ===# 
 
@@ -125,4 +126,4 @@ cum_steps2 = pause(30,take_screen,cum_steps1+1)
 
 #Clipping from left to right hemisphere 
 gl.shaderadjust('overlayDepth', 5)
-clipping(10,50,1000,take_screen,cum_steps2+1,270)
+clipping(0,1.0,1000,take_screen,cum_steps2+1,270)
