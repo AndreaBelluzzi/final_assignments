@@ -16,10 +16,12 @@ general tutorial - https://www.nitrc.org/plugins/mwiki/index.php/mricrogl:MainPa
 **MRIcroGL animation**
 - animation1.py
 - animation2.py
+  
 Contains the 3 functions: animation, pause, clipping; with examples of animations that can be created
 
 **Generate video from screenshot**
 - screen2video.ipynb
+  
 Upload screenshots and generate a video with the desired format, codec, resolution and framerate
 
 
