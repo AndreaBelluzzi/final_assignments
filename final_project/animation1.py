@@ -18,6 +18,14 @@ def animation(steps,direction_step,starting_pos,axis2rotate,take_screen,cumulati
     """
     
     for stp in range(1, steps):
+        # Note how you could have simplified the following in a dictionary to avoid the excess
+        # of conditionals:
+        # azimuthelevation_args_dict = {1: {"x": (starting_pos[0]+(stp),starting_pos[1]),
+        #                                   "y": (starting_pos[0],starting_pos[1]+stp)}, ...}
+        # 
+        # args = azimuthelevation_args_dict[direction_step][axis2rotate]
+        # gl.azimuthelevation(*args) (equivalent to gl.azimuthelevation(args[0], args[1]))
+        
         if direction_step == 1:   
             if axis2rotate == "x":            
                 gl.azimuthelevation(starting_pos[0]+(stp),starting_pos[1])
@@ -71,7 +79,7 @@ def pause(time,take_screen,cumulative_steps):
 
 zoom_factor = 1   	#Higher zoom, higher resolution of screenshot(range from 1 to N) 
                     #e.g., zoom_factor = 2 takes the screen resolution and double it 
-take_screen = 0
+take_screen = 0  # LP Why does this has to be an int? make it a bool so you don't compare if ==0 and just use the vale!
 
 path = 'C:\\Users\\andrea.belluzzi\\Desktop\\video_network\\frames_ani1\\'      #where to save screen
 

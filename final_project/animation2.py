@@ -17,6 +17,8 @@ def animation(steps,direction_step,starting_pos,axis2rotate,take_screen,cumulati
     cumulative_steps = crucial for saving the screenshot without deleting the old ones generated from other animation
     """
     
+    # See comment in the other
+    
     for stp in range(1, steps):
         if direction_step == 1:   
             if axis2rotate == "x":            
